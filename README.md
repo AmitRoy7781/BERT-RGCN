@@ -31,6 +31,14 @@ In recent years, two lines of research in deep learning are very gaining interes
 --grad-norm       Clip the gradient within which range
 ```
 
+**Prerequisites**
+Install the following python library
+
+pytorch
+torch_geometric
+torch_scatter
+torch_sparse
+transformers
 
 **Basic Usage:**
 
