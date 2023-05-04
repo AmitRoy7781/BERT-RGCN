@@ -33,8 +33,12 @@ In recent years, two lines of research in deep learning are very gaining interes
 
 **Prerequisites**
 Install the following python library
-
-* pytorch
+ 
+* numpy
+* pandas
+* tqdm
+* torch
+* argparse
 * torch_geometric
 * torch_scatter
 * torch_sparse
