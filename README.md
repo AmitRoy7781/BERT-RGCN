@@ -30,3 +30,9 @@ In recent years, two lines of research in deep learning are very gaining interes
 --regularization  Hyperparameter for the weight decay
 --grad-norm       Clip the gradient within which range
 ```
+
+
+**Basic Usage:**
+
+Run the python notebook with appropriate parameter changes.
+
