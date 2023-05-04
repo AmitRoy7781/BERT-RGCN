@@ -21,24 +21,55 @@ In recent years, two lines of research in deep learning are very gaining interes
 **Main Parameters:**
 
 ```
---test        Boolean flag to train the BERT-RGCN or load pretrained model for inference
---dataset     Name of the dataset
---emb_type    type of embedding used bert or scratch
---long_text   Use long text for the entities and relations or short text
---max_relations   Maximum number of relations to be used
---max_tokens      Maximum number of tokens to be considered for the embedding
---graph-batch-size Batch size of the graph during training
---graph-split-size Ratio for spliting the links in graph 
---negative-sample Ratio of sampling negative edges
---n-epochs  Number of training epochs
---evaluate-every Evaluate and save the model after how many epochs
---dropout       Dropout probability
---gpu           Cuda Device ID
---n-bases       Number of bases used for basis-decomposition
---hid-dim       Number of dimension of the hidden representation
---regularization  Hyperparameter for the weight decay
---grad-norm       Clip the gradient within which range
+--test                   Boolean flag to train the BERT-RGCN or load pretrained model for inference
+--dataset                Name of the dataset
+--emb_type               type of embedding used bert or scratch
+--long_text              Use long text for the entities and relations or short text
+--max_relations          Maximum number of relations to be used
+--max_tokens             Maximum number of tokens to be considered for the embedding
+--graph-batch-size       Batch size of the graph during training
+--graph-split-size       Ratio for spliting the links in graph 
+--negative-sample        Ratio of sampling negative edges
+--n-epochs               Number of training epochs
+--evaluate-every         Evaluate and save the model after how many epochs
+--dropout                Dropout probability
+--gpu                    Cuda Device ID
+--n-bases                Number of bases used for basis-decomposition
+--hid-dim                Number of dimension of the hidden representation
+--regularization         Hyperparameter for the weight decay
+--grad-norm              Clip the gradient within which range
 ```
+
+
+**Environment Setup:**
+
+Create Conda Environment
+```
+conda create --name BERT-RGCN
+conda activate BERT-RGCN
+```
+
+Install pytorch:
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+
+```
+Install pytorch geometric:
+```
+pip install pyg-lib torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
+
+```
+
+Install requirements.txt
+```
+conda install --file requirements.txt
+```
+
+**Basic Usage:**
+
+Run the python notebook with appropriate parameter changes.
+
+
 
 **Prerequisites**
 Install the following python library
@@ -48,9 +79,6 @@ Install the following python library
 * tqdm
 * torch
 * argparse
-* torch_geometric
-* torch_scatter
-* torch_sparse
 * transformers
 
 **Basic Usage:**
@@ -60,3 +88,5 @@ Run the python notebook with appropriate parameter changes.
 The codebase is based on following two repositories
 * [kg-bert](https://github.com/yao8839836/kg-bert), and
 * [RGCN](https://github.com/JinheonBaek/RGCN)
+
+
