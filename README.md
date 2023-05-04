@@ -2,4 +2,4 @@
 
 A repository containing the implementation of Bert embeddings with RGCN for the link prediction task in knowledge graph
 
-<img src="Bert_RGCN.pdf" width="600">
+<img src="bert_rgcn.png" width="600">
