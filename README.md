@@ -34,11 +34,11 @@ In recent years, two lines of research in deep learning are very gaining interes
 **Prerequisites**
 Install the following python library
 
-pytorch
-torch_geometric
-torch_scatter
-torch_sparse
-transformers
+* pytorch
+* torch_geometric
+* torch_scatter
+* torch_sparse
+* transformers
 
 **Basic Usage:**
 
