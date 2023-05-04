@@ -1,5 +1,13 @@
 # Investigating Knowlege Graph  Completion with Pre-trained Language model and Graph Neural Networks
 
+CS 577: Natural Language Processing, Spring 2023
+Computer Science, Purdue University 
+
+* [Amit Roy](https://amitroy7781.github.io/)
+* [Taisuke Mori](https://github.com/umami1111)
+
+
+
 A repository containing the implementation of Bert embeddings with RGCN for the link prediction task in knowledge graph
 
 <img src="bert_rgcn.png" width="600">
