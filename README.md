@@ -48,3 +48,4 @@ Install the following python library
 
 Run the python notebook with appropriate parameter changes.
 
+The codebase is based on [KG-BERT](https://github.com/yao8839836/kg-bert) and [RGCN](https://github.com/JinheonBaek/RGCN)
